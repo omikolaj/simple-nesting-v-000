@@ -65,9 +65,9 @@ end
 def adding_matz
 # add the following information to the top level of programmer_hash
 # :yukihiro_matsumoto => {
-#   :known_for => "Ruby",
-#    :languages => ["LISP", "C"]
-# }
+   :known_for => "Ruby",
+    :languages => ["LISP", "C"]
+ }
 
 	programmer_hash =
  		{
@@ -84,9 +84,9 @@ def adding_matz
           :languages => ["C"]
         }
      }
-		 programmer_hash[0] = [:yukihiro_matsumoto]
-		 binding.pry
-
+		 
+		 a_programmer_hash{:yukihiro_matsumoto = {:known_for => "Ruby", :languages => ["LISP", "C"]}.mergh(programmer_hash)
+		 
 
 end
 
